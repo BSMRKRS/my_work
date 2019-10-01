@@ -9,7 +9,8 @@ You'll need a github account (github.com). _Use your school email address._
 Enter the `my_work` folder and run `bash create_my_folder flast00` where flast00 is your BSM email prefix. Github will ask you to log in.
 
 #### If the pi does not have a `my_work` folder
-Ask a teacher for help.
+Ask a teacher for help, or if you want to do it yourself:
+Enter the home folder for the student user (`/home/student/`) and run `git clone https://github.com/bsmrobotics/my_work.git`
 
 ### Working with MyWork
 After you've run the `create_my_folder` command, you can just work in the `my_work` directory and save your work as usual. Make directories, create files, save files, run robots, etc.
