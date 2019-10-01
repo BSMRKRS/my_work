@@ -1,0 +1,2 @@
+git commit -am 'general save'
+git push origin $1
