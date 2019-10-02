@@ -1,0 +1,6 @@
+import RoboPiLib as RPL
+import setup
+import time
+RPL.servoWrite(0,1520)
+time.sleep(1)
+RPL.servoWrite(0,0)
