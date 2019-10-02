@@ -10,7 +10,8 @@ Enter the `my_work` folder and run `bash create_my_folder flast00` where flast00
 
 #### If the pi does not have a `my_work` folder
 Ask a teacher for help, or if you want to do it yourself:
-Enter the home folder for the student user (`/home/student/`) and run `git clone https://github.com/bsmrobotics/my_work.git`. Github will ask you to log in.
+
+Enter the home folder for the student user (`/home/student/`) and run `git clone https://github.com/bsmrobotics/my_work.git`. Github will ask you to log in. Then run `bash create_my_folder flast00`
 
 ### Working with MyWork
 After you've run the `create_my_folder` command, you can just work in the `my_work` directory and save your work as usual. Make directories, create files, save files, run robots, etc.
@@ -21,3 +22,6 @@ Make sure you're in `my_work` and run `bash save_my_work flast00`. Github will a
 
 ### Loading your work from the cloud
 Make sure you're in `my_work` and run `bash load_my_work flast00`. Github will ask you to log in.
+
+### Updating MyWork
+Every now and then your teacher will tell you to update the MyWork scripts. You can do this by running `bash update_my_work_scripts flast00`. This is never a bad idea; you may as well do this every now and then.
