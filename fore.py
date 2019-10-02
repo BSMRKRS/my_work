@@ -9,9 +9,15 @@ while x == 1:
     if reading == 0:
         RPL.servoWrite(1,1400)
         time.sleep(1)
-        RPL.servoWrite(1,1400)
+        RPL.servoWrite(1,0)
         time.sleep(1)
         RPL.servoWrite(1,1400)
         time.sleep(1)
+        RPL.servoWrite(1,0)
+        time.sleep(1)
+        RPL.servoWrite(1,1400)
+        time.sleep(1)
+        RPL.servoWrite(1,0)
     elif reading == 1:
         RPL.servoWrite(1,0)
+
