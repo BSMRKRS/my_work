@@ -4,6 +4,8 @@
 ### Before you begin
 You'll need a github account (github.com). _Use your school email address._
 
+Once you've signed up for github, your teacher will need to invite into the MyWork repository, so talk to them about this.
+
 ### The very first time you ever use MyWork
 #### If the pi has a `my_work` folder (at `/home/student/my_work`)
 Enter the `my_work` folder and run `bash create_my_folder flast00` where flast00 is your BSM email prefix. Github will ask you to log in.
