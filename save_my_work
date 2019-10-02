@@ -1,0 +1,5 @@
+git config user.email "$1@bsmschool.org"
+git config user.name $1
+git add .
+git commit -am 'general save'
+git push origin $1

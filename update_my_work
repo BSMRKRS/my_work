@@ -1,0 +1,6 @@
+git stash
+git checkout master
+git pull origin master
+git checkout $1
+git merge master
+git stash pop
