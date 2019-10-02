@@ -1,0 +1,18 @@
+import RoboPiLib as RPL
+import setup
+L = 16
+RPL.pinMode(L,RPL.INPUT)
+readingL = RPL.digitalRead(L)
+R = 18
+RPL.pinMode(R,RPL.INPUT)
+readingR = RPL.digitalRead(R)
+if readingL == 0:
+	RPL.servoWrite(0,1480)
+elif readingR == 0:
+	RPL.servoWrite(1,1520)
+else:
+	RPL.servoWrite(0,0)
+	RPL.servoWrite(1,0) 
+if readingL == 0 and readingR == 0:
+	RPL.servoWrite(1,1480)
+	RPL.servoWrite(0,1520)
