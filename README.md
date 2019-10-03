@@ -24,6 +24,3 @@ Make sure you're in `my_work` and run `bash save_my_work flast00`. Github will a
 
 ### Loading your work from the cloud
 Make sure you're in `my_work` and run `bash load_my_work flast00`. Github will ask you to log in.
-
-### Updating MyWork
-Every now and then your teacher will tell you to update the MyWork scripts. You can do this by running `bash update_my_work_scripts flast00`. This is never a bad idea; you may as well do this every now and then.
