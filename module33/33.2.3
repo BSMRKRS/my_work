@@ -1,0 +1,17 @@
+import RoboPiLib as RPL
+import setup
+sensor_pin = 16
+sensor_pin2 = 17
+big = 3
+while (big == 3):
+	RPL.pinMode(sensor_pin,RPL.INPUT)
+	reading = RPL.digitalRead(sensor_pin)
+	RPL.pinMode(sensor_pin2,RPL.INPUT)
+	reading2 = RPL.digitalRead(sensor_pin2)
+	combos = (reading + reading2)
+
+	if combos == 2:
+		RPL.servoWrite(1,0)
+	else:
+		RPL.servoWrite(1,1400)
+

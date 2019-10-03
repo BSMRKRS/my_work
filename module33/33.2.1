@@ -1,0 +1,12 @@
+import RoboPiLib as RPL
+import setup
+bullcrap = 1
+while (bullcrap == 1):
+	sensor_pin = 17
+	RPL.pinMode(sensor_pin,RPL.INPUT)
+	reading = RPL.digitalRead(sensor_pin)
+	if reading == 1:
+		RPL.servoWrite(1,1400)
+	else:
+		RPL.servoWrite(1,0)
+	
