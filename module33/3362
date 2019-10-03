@@ -3,5 +3,6 @@ import setup
 import time
 import test
 test.puls(1400)
+test.puls(1400)
 
  

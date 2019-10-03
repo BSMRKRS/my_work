@@ -1,7 +1,7 @@
 import RoboPiLib as RPL
 import setup
 import time
-sensor_pin = 16
+sensor_pin = 17
 sensor_pin1 = 18
 
 RPL.pinMode(sensor_pin,RPL.INPUT)
@@ -15,6 +15,5 @@ def puls(speed):
         time.sleep(1)
         RPL.servoWrite(0,00)
         time.sleep(1)
-        RPL.servoWrite(0,speed)
-        time.sleep(1)
-        RPL.servoWrite(0,00)
+       
+      
