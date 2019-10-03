@@ -1,0 +1,25 @@
+import RoboPiLib as RPL
+import setup
+sensor_pin=7
+sensor_pin1=17
+print("working")
+#RPL.pinMode(sensor_pin1,RPL.INPUT)
+print("working")
+running=True
+print("working")
+whyGod=0
+#reading1=RPL.digitalRead(sensor_pin1)
+#print(reading1)
+while running:
+	print RPL.analogRead(sensor_pin)	
+	#reading1=RPL.digitalRead(sensor_pin1)
+	print(reading)
+	if reading==10:
+		RPL.servoWrite(0,1400)
+		RPL.servoWrite(1,1400)
+	if reading==11:
+		RPL.servoWrite(1,1450)
+		RPL.servoWrite(0,1450)
+	if whyGod==100 :
+		running=False
+	whyGod+=1

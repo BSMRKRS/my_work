@@ -1,0 +1,15 @@
+import RoboPiLib as RPL
+import setup
+import time
+seconds=0
+start=time.time()
+t=0
+while t <20:
+	t=time.time()-start
+	RPL.servoWrite(0,1400)
+	time.sleep(1)	
+		
+	
+	RPL.servoWrite(0,00)
+		
+	time.sleep(1)
