@@ -10,8 +10,9 @@ while (big == 3):
 	reading2 = RPL.digitalRead(sensor_pin2)
 	combos = (reading + reading2)
 
-	if combos == 2:
-		RPL.servoWrite(1,0)
+
+	if combos == 0:
+		RPL.servoWrite(1,00)
 	else:
 		RPL.servoWrite(1,1400)
 
