@@ -1,0 +1,16 @@
+import RoboPiLib as RPL
+import setup
+import time
+L = 16
+RPL.pinMode(L,RPL.INPUT)
+reading = RPL.digitalRead(L)
+while reading == 1:
+	RPL.servoWrite(0,1480)
+	RPL.servoWrite(1,1520)
+	time.sleep(2)
+	RPL.servoWrite(1,1500)
+	time.sleep(1)
+	RPL.servoWrite(0,1500)
+	RPL.pinMode(L,RPL.INPUT)
+	reading = RPL.digitalRead(L)
+
