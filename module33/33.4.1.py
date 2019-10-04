@@ -2,7 +2,7 @@ import RoboPiLib as RPL
 import setup
 import time
 sensor = [17]
-speed = [1410, 1500]
+speed = [1590, 1500]
 x = 1
 
 def pulse():
