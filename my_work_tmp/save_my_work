@@ -1,0 +1,14 @@
+if [ "$1" == "flast00" ]; then
+  echo "You cannot use that branch name! Please check it and try again.";
+elif [ "$1" == "master" ]; then
+  echo "You cannot use that branch name! Please check it and try again.";
+elif [ "$1" == "pkirwin" ]; then
+  echo "You cannot use that branch name! Please check it and try again.";
+else
+  bash update_my_work_scripts $1
+  git config user.email "$1@bsmschool.org"
+  git config user.name $1
+  git add .
+  git commit -am 'general save'
+  git push origin $1
+fi
