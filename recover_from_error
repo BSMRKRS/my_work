@@ -7,4 +7,5 @@ cd my_work
 bash create_my_folder $1
 cp -r ../my_work_tmp .
 rm -r ../my_work_tmp
+git pull origin $1
 bash save_my_work $1
