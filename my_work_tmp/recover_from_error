@@ -1,5 +1,5 @@
 cd ..
-mkdir mywork_temp
+mkdir my_work_temp
 cp -r my_work my_work_tmp
 rm -rf my_work_tmp/.git
 git clone -b master --single-branch https://github.com/BSMRKRS/my_work.git
@@ -7,4 +7,5 @@ cd my_work
 bash create_my_folder $1
 cp -r ../my_work_tmp .
 rm -r ../my_work_tmp
+git pull origin $1
 bash save_my_work $1
