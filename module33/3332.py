@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 import RoboPiLib as RPL
 import setup
@@ -23,6 +24,8 @@ if True:
 	Process(target=wheel_1).start()
 	Process(target=wheel_2).start()
 =======
+=======
+>>>>>>> master
 import RoboPiLib as RPL 
 import setup 
 import time
@@ -48,4 +51,7 @@ while True:
     time.sleep(2)
     
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
