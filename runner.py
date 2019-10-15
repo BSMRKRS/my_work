@@ -1,5 +1,14 @@
 #runs it
 import RoboPiLib as RPL
 import setup
-RPL.servoWrite(1,1400)
+
+def go():
+    RPL.servoWrite(1,1400)
+
+def stop():
+    RPL.servoWrite(1,0)
+
+
+
+
 
