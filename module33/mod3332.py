@@ -3,6 +3,7 @@ import setup
 import time
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 i = 1
 while i < 5:
 	i += 1
@@ -19,6 +20,8 @@ while i < 5:
 	RPL.servoWrite(1,1500)
 	time.sleep(1)
 =======
+=======
+>>>>>>> Stashed changes
 def motorPulse(motor,speed,seconds):
 	i = 1
 	while i < 5:
@@ -30,4 +33,7 @@ def motorPulse(motor,speed,seconds):
 
 motorPulse(0,1400,1)
 motorPulse(1,1600,2)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
