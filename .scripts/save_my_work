@@ -1,0 +1,7 @@
+bash .scripts/verify_conditions $1; if [ $? != 0 ]; then exit 1; fi
+bash update_my_work_scripts $1
+git config user.email "$1@bsmschool.org"
+git config user.name $1
+git add .
+git commit -am 'general save'
+git push origin $1
