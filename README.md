@@ -28,5 +28,5 @@ Make sure you're in `my_work` and run `bash .smash load_my_work flast00`. Github
 ### If things go wrong...
 1. Go to the parent directory of `my_work`. I.e., the parent directory is the directory that contains `my_work`. If you're in `my_work` you can do this with `cd ..`.
 1. Copy the recovery script to this directory with `cp my_work/.scripts/recover_from_error .`. Yes, the last space and period are important.
-1. Run the recovery script with `bash recover_from_error flast00`.
+1. Run the recovery script with `bash recover_from_error flast00`. Note that unlike many of the other commands, this one **doesn't** start with `bash .smash`.
 1. Go back into `my_work` with `cd my_work` and keep going. Don't forget to save your work!
