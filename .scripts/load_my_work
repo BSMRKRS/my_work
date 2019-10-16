@@ -1,0 +1,6 @@
+bash .scripts/verify_conditions $1; if [ $? != 0 ]; then exit 1; fi
+git config user.email "$1@bsmschool.org"
+git config user.name $1
+git commit -am 'dumping working director'
+git checkout $1
+git pull origin $1

@@ -1,0 +1,33 @@
+d_flag='true' # require specific /home/student/my_work directory
+print_usage(){
+  echo "-d    Allow any directory (otherwise requires /home/student/my_work)";
+  echo "-h    Show this help menu";
+}
+fail_and_exit(){
+  echo "FAILURE! Not Continuing.";
+  exit 1;
+}
+while getopts 'dh' flag; do
+  case "${flag}" in
+    d) d_flag='false' ;;
+    h) print_usage; exit 1 ;
+  esac
+done
+if [ "$1" == "flast00" ]; then
+  echo "You cannot use that branch name! Please check it and try again.";
+  fail_and_exit;
+elif [ "$1" == "master" ]; then
+  echo "You cannot use that branch name! Please check it and try again.";
+  fail_and_exit;
+elif [ "$1" == "pkirwin" ]; then
+  echo "You cannot use that branch name! Please check it and try again.";
+  fail_and_exit;
+fi
+echo "OK: Username ($1)"
+if [ "$PWD" != "/home/student/my_work" ] && [ $d_flag == 'true' ]; then
+  echo "You are calling my_work from a directory other than /home/student/my_work";
+  fail_and_exit;
+fi
+echo "OK: Working directory ($PWD)";
+echo "Verification OK. Continuing...";
+exit 0;

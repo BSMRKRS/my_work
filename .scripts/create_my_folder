@@ -1,0 +1,4 @@
+bash .scripts/verify_conditions $1; if [ $? != 0 ]; then exit 1; fi
+git config user.email "$1@bsmschool.org";
+git config user.name $1;
+git checkout -b $1;
