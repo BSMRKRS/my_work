@@ -6,6 +6,7 @@ x = 1
 
 while True:
 	for x in range(1000):
+		RPL.pinMode(sensor_pin,RPL.INPUT)
 		if RPL.digitalRead(16) == 0:
 			RPL.servoWrite(0,1400)
 			time.sleep(0.5)
@@ -19,5 +20,5 @@ while True:
 			time.sleep(0.5)
 			RPL.servoWrite(0,1500)
 		else:
-			break
+			time.sleep(0.5)
 		x += 1
