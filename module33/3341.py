@@ -14,8 +14,6 @@ def pulse():
 			RPL.servoWrite(0,1500) 
 
 while True:
-	def pulse():
-else:
-	break
+	def pulse()
 
 		
