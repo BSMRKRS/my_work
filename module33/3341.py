@@ -15,4 +15,7 @@ def pulse():
 
 while True:
 	def pulse():
+else:
+	break
+
 		
