@@ -19,5 +19,5 @@ for x in range(20):
 		time.sleep(0.5)
 		RPL.servoWrite(0,1500)
 	else:
-		time.sleep(0.5)
+		time.sleep(1)
 	x += 1
