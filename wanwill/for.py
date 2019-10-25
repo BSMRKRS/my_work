@@ -1,5 +1,3 @@
-student@robo-69:~/my_work/module33 $ vi mod3341.py
-
 import RoboPiLib as RPL
 import setup
 import time
@@ -13,4 +11,4 @@ if readingR == 0:
                 time.sleep(0.3)
                 RPL.servoWrite(0,1500)
                 time.sleep(0.3)
-~                                   
+                                  
