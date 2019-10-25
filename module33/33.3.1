@@ -1,0 +1,10 @@
+import RoboPiLib as RPL
+import setup
+import time
+tired = 4
+while (tired == 4):
+	RPL.servoWrite(1,0)
+	time.sleep( 1 )
+	RPL.servoWrite(1,1400)
+	time.sleep( 1 )
+
