@@ -1,1 +1,2 @@
-import 3362_2.py
+While True:
+  import 3362_2.py
